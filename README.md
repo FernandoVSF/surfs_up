@@ -15,13 +15,14 @@ Obtain more information about temperature trends before opening the surf shop. S
 ## Results
 The analysis of Oahu's weather data data shows that:
   - Average temperature is fairly stable across the year, being June's average slighlyly higher (75 against 71);
-  - Temperatures ate more stable whithin the month in June (std 3.26 against 3.75), but both overall fairly stable.
+  - Temperatures ate more stable whithin the month in June (std 3.26 against 3.75), but both overall fairly stable;
+  - Although there are few outliers (56 in December), there are not many cold days, as the 25% percentile is 73 and 69 (with fewer cold days in June)
   
-  
+- June Statiscs
+![June Statiscs](/June_stats.png)
 
-  
-- Ride-Sharing Summary
-![Ride-Sharing summary](/analysis/Ride_Sharing_DF.png)
+- December Statiscs
+![December Statiscs](/December_stats.png)
   
  -  The total fare in urban cities are signifincatly higher than nom-urbans as shown in the chart below.  But this is mistly explained by higher number of rides, but not as much as total of drivers, as shown in the table above.
  
