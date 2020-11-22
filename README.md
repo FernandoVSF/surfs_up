@@ -14,7 +14,9 @@ Obtain more information about temperature trends before opening the surf shop. S
 
 ## Results
 The analysis of Oahu's weather data data shows that:
-  - Less urban cities have much lower of rides (by definition), but have even lowr number of drivers, which makes average Fare per Ride and especially Average Fare per driver be signicantly higher, as shown in the table below:
+  - Average temperature is fairly stable across the year, being June's average slighlyly higher (75 against 71);
+  - Temperatures ate more stable whithin the month in June (std 3.26 against 3.75), but both overall fairly stable.
+  
   
 
   
