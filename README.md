@@ -23,16 +23,17 @@ The analysis of Oahu's weather data data shows that:
 
 - December Statiscs
 ![December Statiscs](/December_stats.png)
-  
- -  The total fare in urban cities are signifincatly higher than nom-urbans as shown in the chart below.  But this is mistly explained by higher number of rides, but not as much as total of drivers, as shown in the table above.
- 
-- Pyber-Fare Summary
-![Pyber_fare_summary](/analysis/PyBer_fare_summary.png) 
  
 ## Summary
 
-Based on the results above, we have the following recommendations:
+Based on the results above, we reached the conclusion that, given the temperature analysis, the surf and ice cream shop business is sustainable year-round.  However, for a more accurate opinion, it would be necessary also analysing preciptation and data from the station with the highest number of temperature observations, as it tends to be more reliable.
 
-  - Although there are fewer rides on non urban cities, the number of drivers are not enough to support this demand.  Therefore the company should increase the bumber of drivers in those cities, which by consequence, have a higher compensation per ride.
-  - As lower prices per ride ate correlated to higher number of rides, the copany should decrease the price in non-urban areas to increase demand.
-  - By reallocating driver's to non-urban areas, there will be room to increase fares on urban cities, and inprove the break-even.
+  - Preciptation:  
+    results = session.query(Measurement.prcp).\
+    filter(extract('month', Measurement.date) == 12).all()
+    
+  - Highest Obsvervation Station:
+    results = session.query(Measurement.tobs).\
+    filter(Measurement.station == 'USC00519281').\
+    filter(extract('month', Measurement.date) == 12).all()
+  
